@@ -9,7 +9,6 @@ import java.util.List;
 
 public class ClienteDAO {
 
-    // Agregar nuevo cliente
     public boolean agregarCliente(ClienteVO cliente) {
         String sql = "INSERT INTO cliente (nombre) VALUES (?)";
 
@@ -28,7 +27,6 @@ public class ClienteDAO {
         }
     }
 
-    // Listar todos los clientes
     public List<ClienteVO> listarClientes() {
         List<ClienteVO> listaClientes = new ArrayList<>();
         String sql = "SELECT id, nombre FROM cliente";

@@ -12,7 +12,7 @@ import java.util.List;
 
 public class JoyaDAO {
 
-    // Método para listar todas las joyas
+
     public List<JoyaVO> listarJoyas() {
         List<JoyaVO> listaJoyas = new ArrayList<>();
         String sql = "SELECT id, nombre, material, peso, precio, stock FROM joya";

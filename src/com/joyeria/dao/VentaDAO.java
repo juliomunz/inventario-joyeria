@@ -9,7 +9,6 @@ import java.util.List;
 
 public class VentaDAO {
 
-    // Método para registrar una venta
     public boolean registrarVenta(VentaVO venta) {
         String sql = "INSERT INTO venta (id_cliente, id_joya, cantidad, fecha) VALUES (?, ?, ?, ?)";
 
@@ -31,7 +30,6 @@ public class VentaDAO {
         }
     }
 
-    // Método para listar todas las ventas
     public List<Object[]> listarVentasConNombreJoya() {
         List<Object[]> listaVentas = new ArrayList<>();
         String sql = "SELECT v.id, v.id_cliente, j.nombre AS nombre_joya, v.cantidad, v.fecha " +
@@ -62,7 +60,6 @@ public class VentaDAO {
         return listaVentas;
     }
 
-    // Método para listar joyas más vendidas
     public List<Object[]> obtenerJoyasMasVendidasConNombre() {
         List<Object[]> resultados = new ArrayList<>();
         String sql = "SELECT j.nombre AS nombre_joya, SUM(v.cantidad) AS total_vendido " +

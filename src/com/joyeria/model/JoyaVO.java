@@ -8,7 +8,6 @@ public class JoyaVO {
     private double precio;
     private int stock;
 
-    // Constructor vacío
     public JoyaVO() {}
 
     // Constructor completo
