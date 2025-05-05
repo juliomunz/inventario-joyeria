@@ -67,7 +67,14 @@ public class VentaView extends JFrame {
         for (ClienteVO cliente : clientes) {
             comboClientes.addItem(cliente);
         }
-    }
+        if (clientes.isEmpty()) {
+            JOptionPane.showMessageDialog(this,
+                    "No hay clientes registrados. Por favor agregue al menos uno antes de registrar una venta.",
+                    "Atención",
+                    JOptionPane.WARNING_MESSAGE
+            );
+        }
+        }
 
     private void realizarVenta() {
         JoyaVO joyaSeleccionada = (JoyaVO) comboJoyas.getSelectedItem();

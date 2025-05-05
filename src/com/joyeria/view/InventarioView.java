@@ -25,7 +25,7 @@ public class InventarioView extends JFrame {
         setTitle("Inventario de Joyas");
         setSize(800, 400);
         setLocationRelativeTo(null);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
         tablaJoyas = new JTable();
         botonAgregar = new JButton("Agregar Joya");

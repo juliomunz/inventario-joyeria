@@ -22,8 +22,8 @@ public class ReporteJoyasMasVendidasView extends JFrame {
         setTitle("Reporte - Joyas Más Vendidas");
         setSize(500, 300);
         setLocationRelativeTo(null);
-        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setLayout(new BorderLayout());
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
         tablaReporte = new JTable();
         JScrollPane scrollPane = new JScrollPane(tablaReporte);
